@@ -1,0 +1,12 @@
+---
+name: Checks
+
+on: [push]
+
+jobs:
+  test-lint:
+    name: Lint
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Lint
+        run: flake8
